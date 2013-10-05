@@ -320,7 +320,7 @@ int problemFour(int pins[], int pos, char a0[], char a1[], int mode){
 			delta = -delta;
 		}
 		//printf("The delta is: %d \n", delta);
-		if (abs(delta) > 300){
+		if (abs(delta) > 100){
 			if (delta < 0){
 				pos = smallClockwiseRotation(pins, pos);
 			}
