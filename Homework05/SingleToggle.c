@@ -62,11 +62,12 @@ int main(int argc, char *argv[]) {
     // Set USR3 to be an output pin
     reg = *gpio_oe_addr;
     printf("GPIO1 configuration: %X\n", reg);
-    reg &= ~USR3;       // Set USR3 bit to 0
+    reg &= ~GPIO_16;       // Set USR3 bit to 0
     *gpio_oe_addr = reg;
     printf("GPIO1 configuration: %X\n", reg);
 
     printf("Start blinking LED USR3\n");
+    
     while(keepgoing) {
         printf("%d\n", *gpio_datain);
         	if(*gpio_datain & GPIO_23) {
@@ -76,7 +77,7 @@ int main(int argc, char *argv[]) {
                    
                 *gpio_cleardataout_addr = USR3;
         	}
-            usleep(10000);
+            usleep(1000);
     }
 
     munmap((void *)gpio_addr, GPIO1_SIZE);

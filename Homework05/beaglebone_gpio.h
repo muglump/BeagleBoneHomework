@@ -26,4 +26,5 @@
 #define GPIO_15  (1<<15)
 #define GPIO_14  (1<<14)
 #define GPIO_23  (1<<17)
+#define GPIO_16 	 (1<< 19)
 #endif

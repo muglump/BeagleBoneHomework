@@ -77,7 +77,7 @@ int main(int argc, char *argv[]) {
 
     printf("Start blinking LED USR3\n");
     while(keepgoing) {
-        printf("%d\n", *gpio_datain2);
+        printf("%d\n", *gpio_datain);
         	if(*gpio_datain & GPIO_23) {
             
                 *gpio_setdataout_addr= USR3;
@@ -92,7 +92,7 @@ int main(int argc, char *argv[]) {
             	*gpio_cleardataout_addr = USR2;
         	}
         	
-            usleep(10000);
+            
     }
 
     munmap((void *)gpio_addr, GPIO1_SIZE);
