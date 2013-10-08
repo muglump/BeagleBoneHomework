@@ -1,0 +1,21 @@
+There is immediately a source under the init source. Additionally there is a config MMU where there was not one before. ARCH_RPC is now ARCH_MULTIPLATFORM in default choice. There are many more ARCH choices but the ARCH_CLPS7500 no longer seems to exist. With the additional choices there are many more sources then previously listed.
+
+source "init/Kconfig"
+source "kernel/Kconfig.freezer"
+
+menu "System Type"
+
+config MMU
+	bool "MMU-based Paged Memory Management Support"
+	default y
+	help
+		Select if you want MMU based virtualized addressing space
+		support by paged memory management. If unsure, say "Y".
+		
+#The "ARM system type" choice list is ordered alphabetically by option test. Please add new entires in the option alphabetic order.
+choice
+	prompt "ARM system type"
+	default ARCH_MUTLIPLATFORM
+
+...
+source "arch/arm/mach-mvebu/Kconfig

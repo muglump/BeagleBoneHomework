@@ -1,0 +1,6 @@
+The file has none of the surrounding elements even remotely the same. However the CONFIG_USB_HID is still 1
+#define CONFIG_WIZNET_W5100_MODULE 1
+#define CONFIG_USB_HID 1
+#define CONFIG_DVB_USB_AF9015_MODULE 1
+#define CONFIG_RTL8192CU_MODULE 1
+#define CONFIG_ATM_DRIVERS 1

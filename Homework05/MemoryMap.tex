@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage[margin = 0.5in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{glossaries}
+\usepackage{graphicx}
+\pagenumbering{arabic}
+\onehalfspacing
+\pagestyle{fancy}
+\fancyhead[L]{David Savrda}
+\fancyhead[C]{Beagle Homework 5}
+\fancyhead[R]{10-7-2013}
+
+\begin{document}
+	\begin{titlepage}
+		\vspace*{\fill}
+		\hrulefill
+		\begin{center}
+			\section*{David Savrda}
+			\subsection*{Beagle Homework 5}
+			\subsection*{10-7-2013}
+		\end{center}
+		\hrulefill
+		\vspace*{\fill}
+	\end{titlepage}
+	\newpage
+	\subsection*{Memory Map}
+	\begin{tabular}{| c | c | c | c | c |}\hline
+		Block Name & Start\_Address & End\_Address & Size & Description \\ \hline
+		EMIF0 & 0x4C00\_0000 & 0x4CFF\_FFFF & 16MB & EMIF0 Configuration registers \\ \hline
+		EMIF0 SDRAM & 0x8000\_0000 & 0xBFFF\_FFFF & 1GB & 8\-/16-bit External Memory \\ \hline
+		GPIO0 & 0x44E0\_7000 & 0x44E0\_7FFF & 4KB & GPIO Registers \\ \hline
+		I2C0 & 0x44E0\_B000 & 0x44E0\_BFFF & 4KB & I2C Registers \\ \hline
+		I2C1 & 0x4802\_A000 & 0x4802\_AFFF & 4KB & I2C1 Registers \\ \hline
+		GPIO1 & 0x4804\_C000 & 0x4804\_CFFF & 4KB & GPIO1 Registers \\ \hline
+		I2C2 & 0x4819\_C000 & 0x4819\_CFFF & 4KB & I2C2 Registers \\ \hline
+		GPIO2 & 0x481A\_C000 & 0x481A\_CFFF & 4KB & GPIO2 Registers \\ \hline
+		GPIO3 & 0x481A\_E000 & 0x481A\_EFFF & 4KB & GPIO3 Registers \\ \hline
+		LCD Controller & 0x4830\_E000 & 0X4830\_EFFF & 4KB & LCD Registers \\ \hline
+	\end{tabular}
+	\end{document}

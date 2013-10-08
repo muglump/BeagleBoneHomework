@@ -1,0 +1,28 @@
+There seem to be several new options in the Configuration targets
+Cleaning targets:
+￼Clean - Remove most generated files but keep the config and
+enough build support to build external modules
+mrproper - Remove all generated files + config + various backup files
+distclean - mrproper + remove editor backup and patch files
+
+
+
+Configuration targets:
+  Config         - Update current config utilising a line-oriented program
+  nconfig		- Update current config utilising a ncurses based program
+  Menuconfig     - Update current config utilising a menu based program
+  Xconfig        - Update current config utilising a QT based front-end
+  Gconfig        - Update current config utilising a GTK based front-end
+  Oldconfig      - Update current config utilising a provided .config as base
+  localmodconfig - Update current config disabling modules not loaded
+  localyesconfig - Update current config coverting local modes to core
+  silentoldconfig - Same as oldconfig, but quietly
+defconfig - New config with default answer to all options
+	savedefconfig - Save current config as ./defconfig
+allmodconfig - New config selecting modules when possible
+allyesconfig - New config where all options are accepted with yes
+allnoconfig - New config where all options are answered with no
+
+
+
+
