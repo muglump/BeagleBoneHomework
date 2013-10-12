@@ -1,0 +1,8 @@
+There seem to be several different items that have been added to the list. This includes several Warning type items. There are several items that are missing additionally such as the OBJCOPY.
+LD vmlinux
+SORTEX vmlinux
+sort done marker at 92f4cc
+SYSMAP System.map
+Building modules, stage 2.
+OBJCOPY  arch/arch/boot/Image
+Kernel: arch.arm/boot/ Image is ready

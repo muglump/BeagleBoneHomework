@@ -1,0 +1,7 @@
+There are several different piggies that are being used depending on the file compression that you are using. The only difference in the file is the compression type.
+	.section .piggydata,#alloc
+	.globl input_data
+input_data:
+	.incbin "arch/arm/boot/compressed/piggy.gzip"
+	.globl input_data_End
+input_data_end:

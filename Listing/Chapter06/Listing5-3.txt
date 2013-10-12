@@ -1,0 +1,5 @@
+The base address line does not exist. Additionally there see to be a lot of messages that are current suppressed or not currently part of this distribution.
+Uncompressing Linux.....done booting the kernel
+[0.193603] omap2_mbox_prode: platform not supported 
+[0.204186] tps65217-bl tps65217-bl: no platform data provided
+[0.280802] bone-capemgr bone_capemgr.8: slot #0: No cape fund

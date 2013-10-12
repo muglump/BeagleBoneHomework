@@ -1,0 +1,6 @@
+These three items are located int .../arch/arm/mm/Kconfig
+CONFIG_CPU_V6 - the value of this item is a boolean that depends on ARCH_INTEGRATOR || MACH_REALVIEW_EB || MACH_REALVIEW_PBX
+CONFIG_CPU_V6K - the value of this item is a boolean that depends on ARCH_INTEGRATOR || MACH_REALVIEW_EB || MACH_REALVIEW_PBX
+CONFIG_GPU_V7 - the value of this item is a boolean that depends on ARCH_INTEGRATOR || MACH_REALVIEW_EB || MACH_REALVIEW_PBX
+
+The statement b start_kernel is found in .../arch/arm64/kernel/head.s on line 469. The main.c file is located in ../init.
