@@ -1,0 +1,9 @@
+1). When connect is called the matrix is sent to the bone as a message. Once the bone has recieved the message it reads all of the LED messages and resets the matrixs state. As it does this it sets each matrix to call LEDclick. Then the LED is toggle by sending and i2cset message to the browser and updates the display to reflect that change.
+
+2). When a user clicks one of the 'LED Buttons' it calls LEDclick with the coordinates of the button that was clicked. That function uses the coordinates to reconstruct the matrix.
+
+3). The entry for matrix.css was orginally .on, but to allow for different colors it now includes .on, .on2, .on3.
+
+4). When the page is first visited, the browser connects to the bone which sends the matrix information, whuch contains the status of the LED matrix. Once the browser has receives the information it reconstructs the matrix.
+
+When the user clicks the LED, it calls LEDClick which sends a message to the bone. This will check the status of the LED and move it to the next state as follows; off->green->red->yellow->off. It then sends the i2cset message and updates the LED matrix. The browser is then changed to new status of the LED/
